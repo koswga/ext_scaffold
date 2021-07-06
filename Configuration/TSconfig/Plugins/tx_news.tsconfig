@@ -2,4 +2,5 @@ tx_news.templateLayouts {
     1 = Why us
     2 = News
     3 = Services
+    4 = Team
 }
