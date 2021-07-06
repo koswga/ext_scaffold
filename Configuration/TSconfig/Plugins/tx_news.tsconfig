@@ -1,0 +1,4 @@
+tx_news.templateLayouts {
+    1 = Portfolio
+    2 = News
+}

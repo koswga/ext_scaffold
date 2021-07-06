@@ -1,0 +1,54 @@
+plugin.tx_ext_scaffold{
+    view{
+        templateRootPaths.0 = {$plugin.tx_ext_scaffold.view.templateRootPaths.0}
+        layoutsRootPaths.0 = {$plugin.tx_ext_scaffold.view.layoutsRootPaths.0}
+    }
+}
+plugin.tx_news{
+    view {
+        templateRootPaths >
+        templateRootPaths {
+            0 = EXT:news/Resources/Private/Templates/
+            1 = EXT:ext_scaffold/Resources/Private/Templates/Plugins/News/
+        }
+        partialRootPaths >
+        partialRootPaths {
+            0 = EXT:news/Resources/Private/Partials/
+            1 = EXT:ext_scaffold/Resources/Private/Partials/Plugins/News/
+        }
+        layoutRootPaths >
+        layoutRootPaths {
+            0 = EXT:news/Resources/Private/Layouts/
+            1 = EXT:ext_scaffold/Resources/Private/Layouts/Plugins/News/
+        }
+    }
+}
+page {
+
+    includeCSS{
+        animate = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/animate.css/animate.min.css
+        bootstrap = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/bootstrap/css/bootstrap.min.css
+        bootstrapicon = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/bootstrap-icons/bootstrap-icons.css
+        boxicons = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/boxicons/css/boxicons.min.css
+        glightbox = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/glightbox/css/glightbox.min.css
+        swiper = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/swiper/swiper-bundle.min.css
+        style = EXT:ext_scaffold/Resources/Public/Green/assets/css/style.css
+    }
+
+    includeJSFooter{
+        bootstrapbundle = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/bootstrap/js/bootstrap.min.js
+        glightbox = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/glightbox/js/glightbox.min.js
+        isotopelayout = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/isotope-layout/isotope.pkgd.min.js
+        phpemailform = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/php-email-form/validate.js
+        swiper = EXT:ext_scaffold/Resources/Public/Green/assets/vendor/swiper/swiper-bundle.min.js
+        main = EXT:ext_scaffold/Resources/Public/Green/assets/js/main.js
+
+
+    }
+    includeCSSLibs {
+        googlewebfont = https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i
+    }
+}
+
+
+
