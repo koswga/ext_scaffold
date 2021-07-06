@@ -4,7 +4,7 @@ plugin.tx_ext_scaffold{
         layoutsRootPaths.0 = EXT:ext_scaffold/Resources/Private/Layouts/
     }
 }
-plugin.tx_news {
+plugin.tx_news{
     view {
         templateRootPaths.1 = EXT:ext_scaffold/Resources/Private/Templates/Plugins/News/
         partialRootPaths.1 = EXT:ext_scaffold/Resources/Private/Partials/Plugins/News/
