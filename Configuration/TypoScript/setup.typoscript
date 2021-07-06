@@ -9,17 +9,17 @@ plugin.tx_news{
         templateRootPaths >
         templateRootPaths {
             0 = EXT:news/Resources/Private/Templates/
-            1 = EXT:ext_scaffold/Resources/Private/Templates/Plugins/News/
+            1 = {$plugin.tx_news.view.templateRootPaths.1}
         }
         partialRootPaths >
         partialRootPaths {
             0 = EXT:news/Resources/Private/Partials/
-            1 = EXT:ext_scaffold/Resources/Private/Partials/Plugins/News/
+            1 = {$plugin.tx_news.view.partialRootPaths.1}
         }
         layoutRootPaths >
         layoutRootPaths {
             0 = EXT:news/Resources/Private/Layouts/
-            1 = EXT:ext_scaffold/Resources/Private/Layouts/Plugins/News/
+            1 = {$plugin.tx_news.view.layoutRootPaths.1}
         }
     }
 }
