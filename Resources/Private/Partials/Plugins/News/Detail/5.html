@@ -60,12 +60,13 @@
             <div class="footer">
                 <p>
                     <!-- date -->
+                    <f:comment>
                     <span class="news-list-date">
 						<time itemprop="datePublished" datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
 							<f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date>
 						</time>
 					</span>
-
+                    </f:comment>
                     <f:if condition="{newsItem.categories}">
                         <f:render partial="Category/Items" arguments="{categories:newsItem.categories, settings:settings}" />
                     </f:if>
